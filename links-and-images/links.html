@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <title>Links</title>
+  </head>
+
+  <body>
+
+    <h1>Links</h1>
+    <!--attributes live inside the opening tag with name='val'(single or double quotes work)-->
+    <p>This example is about links and <a href='images.html'> images</a>.</p>
+
+    <!--There are two types of links, absolute, relative, and root-relative.-->
+    <p>This particular page is about links! There are three kinds of links: </p>
+    <ul>
+
+      <!--Absolute links are the most detailed reference to a web resource (usually reserved for directing to other websites)-->
+      <li>Absolute links, like to <a href='https://developer.mozilla.org/en-US/docs/Web/HTML' target='_blank'>Mozilla Developer Network</a>,
+        which is a very good resource for web developers. </li>
+      <!--interesting note: the 'https://' portion is known as the scheme, _blank is a new tab-->
+
+      <!--relative links: same scheme and domain as current file-->
+      <li>Relative links, like to our <a href='misc/extras.html'>extras page</a>.</li>
+
+      <!--root-relative links: under the same domain, starts with / and you can add folders and files with that path. ex: in extras
+        if you did /images.html, it would not be relative, but root-relative-->
+      <li>Root-relative links, like to the <a href='/'>home page</a> of our website but those aren't useful to use right now.</li>
+
+    </ul>
+
+    <!--spaces are bad in html file names/urls, since they appear as %20, instead use hyphens-->
+
+  </body>
+
+</html>
