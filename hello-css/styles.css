@@ -1,0 +1,14 @@
+/* A CSS 'rule' starts with a selector (body) which defines which element it applies to
+  CSS is more interested in presentational information rather than the semantics*/
+body {
+  /*This is then the declaration box, requires curly braces and semi-colons*/
+  color: #414141; /*Dark gray*/
+  background-color: #EEEEEE; /*Light gray*/
+}
+
+h1 {
+  font-size: 36px; /*Most CSS properties require units since there area  lot available.*/
+}
+h2 {
+  font-size: 28px;
+}
