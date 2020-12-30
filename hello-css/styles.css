@@ -1,14 +1,46 @@
 /* A CSS 'rule' starts with a selector (body) which defines which element it applies to
   CSS is more interested in presentational information rather than the semantics*/
+
+/*This is an external style sheet*/
+
 body {
   /*This is then the declaration box, requires curly braces and semi-colons*/
   color: #414141; /*Dark gray*/
   background-color: #EEEEEE; /*Light gray*/
+  font-size: 18px;
 }
 
 h1 {
   font-size: 36px; /*Most CSS properties require units since there area  lot available.*/
 }
 h2 {
-  font-size: 28px;
+  font-size: 1.6em; /* em (pronounced m) is a unit of measurement that scales the original size of the base font */
 }
+
+/* we can select multiple elements to define using commas*/
+h1,h2,h3,h4,h5 {
+  font-family: "Helvetica", "Arial", sans-serif; /* Tries fonts from left to right*/
+  font-weight: normal; /*removes bolding and adds italics*/
+  font-style: italic;
+}
+
+/* To alter bullet or number of a list, adjust the list property*/
+
+ul {
+  list-style-type: none;
+}
+
+ol {
+  list-style-type: lower-greek;
+}
+
+a{
+  text-decoration: none; /* removes underline on links*/
+}
+
+p {
+  text-align: left;
+}
+
+/** There is a hierarchy to the CSS system, where one style takes precedence over the other, with inline styles
+being the most 'powerful'*/
