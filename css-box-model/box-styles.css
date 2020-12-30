@@ -1,0 +1,34 @@
+h1, p {
+  background-color: #DDE0E3;  /*light gray*/ /**Block boxes appear below the previous normally, and its width and height are set automatically*/
+}
+
+h1 {
+  padding: 50px;
+  border-bottom: 20px dotted #5D6063; /*border: size style color*/ /*borders can be used to debug to see if things are showing*/
+}
+
+p{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  padding-left: 10px;
+  padding-right: 10px;
+
+  /*The above can also be written as:*/
+
+  padding: 20px 10px; /*vertical horizontal padding*/
+
+  /*You can also customize each side starting from the top and moving clockwise*/
+
+  padding: 20px 20px 20px 10px;
+  margin-bottom: 50px; /* kinda like transparent padding, useful to space elements where you don't want them to click*/
+}
+
+em, strong {
+  background-color: #B2D6FF; /*light blue*/ /**Inline boxes don't affect vertical spacing, and the width is automatic*/
+  display: inline; /*block instead of in-line element is possible*/
+}
+
+strong {
+  margin: 50px; /*doesn't add any vertical space, since inline element, you need to */
+  padding: 50px; /*padding does though*/
+}
