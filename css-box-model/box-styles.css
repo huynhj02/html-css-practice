@@ -1,3 +1,9 @@
+* { /*resets any styles set by the browser*/
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
 h1, p {
   background-color: #DDE0E3;  /*light gray*/ /**Block boxes appear below the previous normally, and its width and height are set automatically*/
 }
@@ -19,8 +25,10 @@ p{
 
   /*You can also customize each side starting from the top and moving clockwise*/
 
-  padding: 20px 20px 20px 10px;
+  padding: 20px 0px 20px 10px;
+  margin-top: 25px;
   margin-bottom: 50px; /* kinda like transparent padding, useful to space elements where you don't want them to click*/
+  /*Vertical margins are collapsed to the largest setting, ex: btwn two <p> elems, there will only be 50px, since 50 > 25, so it guarantees min 50 px margin.*/
 }
 
 em, strong {
@@ -31,4 +39,21 @@ em, strong {
 strong {
   margin: 50px; /*doesn't add any vertical space, since inline element, you need to */
   padding: 50px; /*padding does though*/
+}
+
+div {
+  color: #FFF;
+  background-color: #5995DA;
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063;
+  border-radius: 5px;
+  width: 200px;
+  box-sizing: border-box; /*normally set to content-box which doesn't account for padding or border*/
+  margin: 20px auto; /*vertical, horizontal, centers the button horizontally.*/
+}
+
+body {
+  text-align: center;
 }
