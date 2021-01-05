@@ -26,7 +26,17 @@
       </p>
 
       <a class='button' href='nowhere.html'>Button One</a>
-      <a class='button call-to-action' href='nowhere.html'>Button Two</a> <!--no commas, seperated by spaces-->
+      <a id='button-2' class='button call-to-action' href='nowhere.html'>Button Two</a> <!--no commas, separated by spaces-->
     </div>
+    
+    <!--id serve as unique targets for url fragments-->
+    <a href='#button-2'>Go to Button Two</a>
+    <a href='selectors.html#button-2'>Go to Button Two</a> <!--from a diff page-->
+
+    <div class='sidebar'> <!--This is another container, so the first paragraph is different-->
+      <p>If this page had a sidebar...</p>
+      <p>We'd have some problems with pseudo-classes.</p>
+    </div>
+
   </body>
 </html>
