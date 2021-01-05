@@ -1,0 +1,59 @@
+/*Jimmy Huynh, 2021*/
+*{
+  margin = 0;
+  padding = 0;
+  box-sizing: border-box;
+}
+
+.page{
+  width: 600px;
+  margin: 0 auto;
+}
+
+.synopsis { /* this is a class selector, seen from the dot*/
+  color: #7E8184; /*light gray*/
+  font-style: italic;
+}
+.synopsis em{ /*descendant selectors*/
+  font-style: normal;
+}
+
+.button {
+  color: #FFF;
+  background-color: #5995DA; /*Blue*/
+  font-weight: bold;
+  padding: 20px;
+  text-align: center;
+  border: 2px solid #5D6063; /*Dark gray*/
+  border-radius: 5px;
+
+  display:block;
+  width:200px;
+  margin: 20px auto;
+}
+
+.call-to-action{ /*This overides the button class since it is later*/
+    font-style: italic;
+    background-color: #EEB75A; /*Yellow*/
+}
+
+a:link{ /*This is known as a pseudoclass, which changes how a certain state acts*/
+    color: blue;
+    text-decoration: none;
+}
+a:visited{
+  color: purple;
+}
+a:hover{
+  color:aqua;
+  text-decoration:underline;;
+}
+a:active{
+  color:red;
+}
+a:visited:hover{/*string pseudoclasses together*/
+  color:orange; /*link doesn't turn red anymore though*/
+}
+a:visited:active{
+  color: red; /*fixes the above*/
+}
