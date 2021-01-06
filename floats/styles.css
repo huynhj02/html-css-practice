@@ -1,10 +1,16 @@
 /*Jimmy Huynh, 2021*/
-/*Note to self: don't forget about CSSI work*/
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.container{ /*move color and overflow from page to container*/
+  overflow: hidden; /*recognizes the height of floating elements*/
+  background-color: #EAEDF0;
+} /* this works well since the page is floated on top of the container that
+has the width of the page and the height of the floats*/
 
 .page {
   width: 900px;
@@ -16,7 +22,7 @@
   background-color: #B2D6FF; /*Medium Blue*/
 }
 
-.sidebar {
+.sidebar { /*The float is actually on top of the content block, "inside the block".*/
   float: left; /*this allows for content to flow around the sidebar*/
   height: 300px;
   width: 200px;
@@ -24,11 +30,50 @@
 }
 
 .content {
+  float: left; /* this stacks the blocks horizontally*/
+  width: 600px;
   height: 500px;
   background-color: #F5CF8E; /*yellow*/
+  padding: 20px;
 }
 
-.footer {
+.article-image{
+  float: left;
+  width: 300px;
   height: 200px;
-  background-color: #D6E9FE; /*Light blue*?
+  margin: 0 20px 20px 0;
+}
+
+p {
+  margin-bottom: 20px;
+}
+
+.footer { /*floating elements don't contribute to height, so footer went below nonfloating elem*/
+  overflow: hidden;
+  background-color: #D6E9FE; /*Light blue*/
+}
+
+.footer-item{
+  float: left;
+  width: 31%; /*relative to width of parent container*/
+  margin: 20px 1.15%;
+  height: 160px;
+  background-color: #B2D6FF; /*Medium Blue*/
+}
+
+.avatar {
+  float: left;
+  width: 60px;
+  height: 60px;
+  margin: 25px;
+  border-radius: 40px;
+  background-color: #D6E9FE;
+}
+.username {
+  margin-top: 30px;
+}
+.comment{
+  margin: 10px;
+  overflow: hidden; /*removes the flow feature where it wraps under the image
+  and instead maintains a strict margin*/
 }
