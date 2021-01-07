@@ -1,0 +1,15 @@
+/*Jimmy Huynh, 2021*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.menu-container {
+  background-color: #5995DA; /*blue*/
+  color: #fff;
+  padding: 20px 0;
+}
+.menu {
+  border: 1px #fff solid;
+  width: 900px;
+}

@@ -1,0 +1,39 @@
+<!doctype html>
+</body>
+<head>
+  <style>
+    *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+    #left {
+      float: left;
+      width: 40%;
+    }
+    #right {
+      border: 5px red solid; /*This is actually wrapping around the floating element, there just isn't enough room in the 40% width to display the text so it goes on a new line*/
+      width: 40%;
+    }
+    section {
+      /* padding: 2px; */
+      background-color: #ccc;
+    }
+    aside{
+      background-color: yellow;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Welcome!</h1>
+  </header>
+  <section id="left">
+    <h2>Content</h2>
+    <p>Good stuff</p>
+  </section>
+
+  <aside id="right">
+    <h2>Sidebar</h2>
+    <p>Links</p>
+  </aside>
