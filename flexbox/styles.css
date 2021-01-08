@@ -3,13 +3,85 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: comic sans ms, sans-serif;
 }
 .menu-container {
   background-color: #5995DA; /*blue*/
   color: #fff;
   padding: 20px 0;
+  display: flex;
+  justify-content: center;
 }
 .menu {
-  border: 1px #fff solid;
+  /* border: 1px #fff solid; */
   width: 900px;
+  display: flex;
+  justify-content: space-between;
+}
+.links {
+  display: flex;
+  justify-content: flex-end;
+}
+.login {
+    margin-left: 20px;
+}
+.header-container{
+  display: flex;
+  color: #5995DA;
+  background-color: #D6E9FE;
+  justify-content: center;
+}
+.header{
+  width: 900px;
+  height: 300px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; /*belongs here since explicit height and has the items we want to center*/
+}
+.social, .subscribe {
+  align-self: flex-end; /*override align-items*/
+  margin-bottom: 20px;
+}
+.photo-grid-container {
+  display: flex;
+  justify-content: center;
+}
+.photo-grid {
+  width: 900px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+
+  flex-direction: column; /*rendering vertically instead of horizontally.*/
+  /*the flex direction also affects which direction it is justified relative to*/
+  align-items: center; /*this is why we need to align-items which now refers to horizontal*/
+
+  /*overriding the above*/
+  flex-direction: row-reverse; /*this reverses per row rather than all imgs*/
+  /*override again*/
+  flex-direction: row;
+}
+.photo-grid-item {
+  /* border: 1px #fff solid; */
+  width: 300px;
+  height: 300px;
+}
+.first-item{
+  order: 1; /*renders last since order is -1 -> 0 (all elems) -> 1*/
+}
+.last-item{
+  order: -1; /*renders first*/
+}
+.footer{
+  display: flex;
+  justify-content: space-between;
+}
+.footer-item {
+  border: 1px #fff solid;
+  background-color: #D6E9FE;
+  height: 200px;
+  flex: 1; /* weight on how the box's width is distributed*/
+}
+.footer-three {
+  flex: 2; /* this means it will have twice the width of the others*/
 }
