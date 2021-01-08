@@ -25,6 +25,9 @@
 .login {
     margin-left: 20px;
 }
+.signup {
+  margin-left: auto; /*eats up all extra space and shifts it to one side*/
+}
 .header-container{
   display: flex;
   color: #5995DA;
@@ -84,4 +87,10 @@
 }
 .footer-three {
   flex: 2; /* this means it will have twice the width of the others*/
+}
+/*We can mix fixed and flex items, fixed take the explicit width*/
+.footer-one, .footer-three {
+  background-color: #5995DA;
+  flex: initial;
+  width: 300px;
 }
