@@ -27,3 +27,25 @@ body {
 .item img {
     display: block;
 }
+
+.item-relative {
+    position: relative; /*nudge relative to fixed position*/
+    top: 30px;
+    left: 30px;
+} /* like margins but doesn't affect other elements*/
+
+.item-absolute {
+  position: absolute; /*nudge relative to the browser window*/
+  top: 10px;
+  left: 10px;
+} /*removed from normal flow, page is rendered like it didn't exist.*/
+
+.absolute {
+  position: relative;   /*absolute positions relative to nearest positioned element*/
+} /*brings absolute item "back into line"*/
+
+.item-fixed {
+  position: fixed;    /*absolute positioned and doesn't scroll with page*/
+  bottom: 0;
+  right: 0;   /*sticks it into the bottom right*/
+}
